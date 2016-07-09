@@ -1,0 +1,60 @@
+@import "compass/css3";
+
+li
+{
+  cursor: default;
+  display: inline-block;
+  font-size: 80px;
+  list-style-type: none;
+}
+
+.star,
+.rating:not(.vote-cast):hover .star:hover ~ .star,
+.rating.vote-cast .star.selected ~ .star
+{
+  /* normal state */
+  color: black;
+}
+
+.rating:hover .star,
+.rating.vote-cast .star
+{
+  /* highlighted state */
+  color: yellow;
+}
+
+li.star.inline {
+	display:inline;
+}
+.ui-icon-myapp-email {
+    background:transparent; /* or none */
+    background-image: url("app-icon-email.png");
+    /* The following border radius rules will override the circle around your icon */
+    -moz-border-radius: 0px;
+    -webkit-border-radius:0px;
+    border-radius:0px;
+}
+/* To fix the size issue override the .ui-icon height */
+.ui-icon{
+    width:14px;
+    height:20px;
+}
+html { 
+  background: url(../Images/dangeneral.jpg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.instagram {
+  float: right;
+}
+ 
+.instagram {
+border: 10px solid;
+
+}
+#chef {
+	text-align: center;
+	
+}

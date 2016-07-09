@@ -1,0 +1,202 @@
+@import url(https://fonts.googleapis.com/css?family=Tangerine);
+html{
+  height:100%;
+}
+body{
+  text-align:center;
+  background:url('https://scontent-ord1-1.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/12631518_10205493344069114_5973794112228780286_n.jpg?oh=33b4565d18184568f800e5329ce70575&oe=57552908')no-repeat;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-position:50% 50%;
+  height:100%;
+  font-family: 'tangerine', sans-serif;
+  font-size: 21px
+}
+body:before {
+  content: "";
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#menu{
+  display: inline-block;
+  height:135px;
+  width:80%;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+#menu li {
+position: relative;
+z-index: 2;
+display: block;
+float: left;
+width: 15%;
+height: 135px;
+line-height: 220px;
+margin-right: 1.42857%;
+white-space: nowrap;
+background-position: 50%;
+}
+.ChefD {
+background: url('https://scontent-ord1-1.xx.fbcdn.net/hphotos-xft1/v/t1.0-9/12002157_10204910424936500_3699814248329239877_n.jpg?oh=071bf24a932d4dae28919e7ab7007467&oe=575AD2FF')no-repeat;
+margin-left: 1.42857%;
+}
+.HoneyDijonChicken{
+  background:url('https://scontent-ord1-1.xx.fbcdn.net/hphotos-xlp1/v/t1.0-9/12510240_10205410673962413_6473001178216498715_n.jpg?oh=34e2c35d8d2cafd692e3b96b91eaff4c&oe=5754ECAE')no-repeat;  
+}
+.LambLoinChop{
+  background:url('https://scontent-ord1-1.xx.fbcdn.net/hphotos-xft1/v/t1.0-9/12541165_10205458940169038_903214836744844156_n.jpg?oh=2aa1186f09c44af30b71ba267e947139&oe=5752273B')no-repeat;
+}
+.GeneralChicken{
+  background:url('https://scontent-ord1-1.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/12360303_10205244588890390_2539998421399245947_n.jpg?oh=fe397fb1c677d148163b2fa58298d98e&oe=575EE118')no-repeat;
+  
+}
+.book{
+  background:url('https://scontent-ord1-1.xx.fbcdn.net/hphotos-xpl1/v/t1.0-9/12301727_10205170698763183_2236398363452528510_n.jpg?oh=10dd48c34384b89801295e6255e7ae74&oe=576C0B81')no-repeat;
+  
+}
+.comment{
+  background:url('http://one-div.com/codepen/menu/comment-large.png')no-repeat;  
+}
+#menu ul{
+  position:relative;
+}
+#menu ul:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+#menu a{
+  color:#FFCC00;
+  text-decoration:none;
+  display:block;
+  width:100%;
+  height:100%;
+  text-shadow: 4px 4px 4px #ED6511;
+}
+#menu li:after {
+content: "";
+width: 9.5238%;
+height: 100%;
+position: absolute;
+top: 0;
+right: -9.5238%;
+background: url('http://one-div.com/codepen/menu/menu-bg.png');
+}
+.ChefD:before {
+content: "";
+width: 9.5238%;
+height: 100%;
+position: absolute;
+top: 0;
+left: -9.5238%;
+background: url('http://one-div.com/codepen/menu/menu-bg.png');
+border-radius: 5px 0px 0px 5px;
+}
+.earth:after{
+  border-radius:0px 5px 5px 0px;
+}
+
+.current{
+  position:absolute;
+  top:-13px;
+  left:8.92857%;
+  margin-left: -49px;
+  width:95px;
+  height:165px;
+  -webkit-transition: all 400ms cubic-bezier(.45,1.92,.9,1.54);
+-moz-transition: all 400ms cubic-bezier(.45,1.92,.9,1.54);
+-o-transition: all 400ms cubic-bezier(.45,1.92,.9,1.54);
+-ms-transition: all 400ms cubic-bezier(.45,1.92,.9,1.54);
+transition: all 400ms cubic-bezier(.16,1.23,.87,1.18);
+}
+.current-back{
+  width:100%;
+  height:100%;
+  position:absolute;
+  background:#c39449;
+  border-radius:5px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.09);
+  border-top: 2px solid rgba(255,255,255,0.1);
+}
+.top-arrow{
+  position:absolute;
+  overflow:hidden;
+  width:100%;
+  height:12px;
+  top:13px;
+  left:0;
+  z-index:2;
+}
+.top-arrow:before{
+  content:"";
+  position:absolute;
+  width:80%;
+  height:10px;
+  top:-10px;
+  left:10%;
+  border-radius:20%;
+  box-shadow:0 0 10px black;
+}
+.top-arrow:after{
+  content:"";
+  position:absolute;
+  width:0;
+  height:0;
+  top:0px;
+  border-top:8px solid #c39449;
+  border-left:6px solid transparent;
+  border-right:6px solid transparent;
+  margin-left:-6px;
+  left:50%;
+}
+
+.bottom-arrow{
+  position:absolute;
+  overflow:hidden;
+  width:100%;
+  height:12px;
+  bottom:17px;
+  left:0;
+  z-index:2;
+}
+.bottom-arrow:before{
+  content:"";
+  position:absolute;
+  width:80%;
+  height:10px;
+  bottom:-10px;
+  left:10%;
+  border-radius:20%;
+  box-shadow:0 0 10px black;
+}
+.bottom-arrow:after{
+  content:"";
+  position:absolute;
+  width:0;
+  height:0;
+  bottom:0;
+  border-bottom:12px solid #c39449;
+  border-left:8px solid transparent;
+  border-right:8px solid transparent;
+  margin-left:-8px;
+  left:50%;
+}
+
+.HoneyDijonChicken:hover ~ .current{
+  left: 25.5%;
+}
+.LambLoinChop:hover ~ .current{
+ left: 42%;
+}
+.GeneralChicken:hover ~ .current{  
+   left: 58.5%;
+}
+.book:hover ~ .current{
+  left: 75%;  
+}
+.comment:hover ~ .current{
+  left: 91.1%; 
+}
